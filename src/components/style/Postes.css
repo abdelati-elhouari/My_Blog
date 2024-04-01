@@ -1,0 +1,127 @@
+img {
+  max-width: 100%;
+  height: 478px;
+  }
+  .article{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .article-child:nth-child(2){
+    align-content: center;
+    width: 46%;
+  }
+  .article-child:nth-child(1){
+        padding-top: 67px;  
+    }
+  .article-child{
+    width: 40%;
+    padding: 28px;
+  }
+  .btn{
+    padding: 25px 70px 3px 12px;
+    display: flex;
+    justify-content: end;
+  }
+  .link{
+    padding: 9px 12px;
+    font-size: 15px;
+    line-height: 1.42857;
+    background-color: #008479;
+    border-radius: 4px;
+    font-weight: 700 !important;
+    border: none;
+    transition: all 400ms ease-out;
+    color: #fff !important;
+  }
+.post-card-title {
+    font-size: 30px;
+    color: #414042;
+    font-family: open sans, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.post-card-content {
+    line-height: 1.4;
+    color: #737373;
+}
+  .hr{
+    border: 2px solid #d4d4d4;
+    width: 80px;
+    margin: 30px 0;
+  }
+
+  .article:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .article-child {
+    flex: 1;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .article-child:nth-child(1) { 
+    animation-name: slideInFromLeft;
+  }
+  
+  .article-child:nth-child(2) {
+    animation-name: slideInFromRight;
+  }
+
+  @media (max-width: 990px) {
+    .article{
+        display: block;
+        justify-content: center;
+      }
+      .article-child{
+        margin: auto;
+        width: 60%;
+        padding: 28px;
+      }
+      .article-child:nth-child(2){
+        width: 60%;
+      }
+      .article-child:nth-child(1){
+        padding-top: 28px;  
+    }
+    
+  }
+  @media (max-width: 690px) {
+    .article{
+        display: block;
+        justify-content: center;
+      }
+      .article-child{
+        margin: auto;
+        width: 90%;
+        padding: 28px;
+      }
+      .article-child:nth-child(2){
+        width: 90%;
+        margin: 0;
+      }
+    
+  }

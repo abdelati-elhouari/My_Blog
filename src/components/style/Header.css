@@ -1,0 +1,56 @@
+.header{
+    /* background: none; */
+    display: flex;
+    justify-content: space-around;
+    background: aliceblue;
+    font-size: larger;
+    font-weight: bold;
+    /* font-style: oblique; */
+    font-family: auto;
+}
+
+.h1Ti{
+    padding: 8px 0;    margin: 0;
+}
+
+.titel{
+    font-style: oblique;
+    color: #414042;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 6px 0px 7px 31px;
+   
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: none;
+    padding-top: 6px;
+}
+a{
+    color: #414042;
+    text-decoration: none;
+}
+.menu{
+    width: 29%;
+    padding: 0;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.li{
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.li:hover{
+    transform: translate(0px, -2px);
+    /* cursor: pointer; */
+}
+.item{
+    background: none;
+}
